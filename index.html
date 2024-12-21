@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Modern design with warm colors */
+    :root {
+      --primary: #FF7F50;
+      --secondary: #FFF3E0;
+      --text: #333333;
+      --accent: #FFB74D;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: var(--text);
+      background: #FFFFFF;
+    }
+
+    .header {
+      background: linear-gradient(45deg, var(--primary), var(--accent));
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .date-badge {
+      background: white;
+      color: var(--primary);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      display: inline-block;
+      margin: 1rem 0;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .section {
+      background: white;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .section h2 {
+      color: var(--primary);
+      border-bottom: 2px solid var(--secondary);
+      padding-bottom: 0.5rem;
+    }
+
+    .requirements-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .requirements-list li {
+      padding: 0.5rem 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .requirements-list li::before {
+      content: "•";
+      color: var(--primary);
+      font-size: 1.5rem;
+      margin-right: 0.5rem;
+    }
+
+    .map-container {
+      height: 300px;
+      background: var(--secondary);
+      border-radius: 10px;
+      margin: 1rem 0;
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        padding: 2rem 1rem;
+      }
+      
+      .header h1 {
+        font-size: 2rem;
+      }
+      
+      .content {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>クリスマスホームパーティー</h1>
+    <div class="date-badge">2024年12月21日（火）18:00-21:00</div>
+    <p>みんなでワイワイ楽しみましょう！！</p>
+  </div>
+
+  <div class="content">
+    <div class="section">
+      <h2>イベント内容</h2>
+      <p>みんなで集まって合コンします。ビンゴ大会では豪華景品も。みんなで一緒に楽しもう！！</p>
+    </div>
+
+    <div class="section">
+      <h2>参加費用</h2>
+      <ul class="requirements-list">
+        <li>男性3000円, 女性2500円</li>
+        <li>食べ物、飲み物持ってきてくれた人は500円引き!</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>場所</h2>
+      <p>パーティスペースXXX</p>
+      <div class="map-container">
+        <img src="/api/placeholder/800/300" alt="地図" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;" />
+      </div>
+    </div>
+  </div>
+</body>
+</html>
